@@ -8,6 +8,8 @@ const PORT = 5000;
 
 app.use(bodyPraser.json());
 
+app.use('/users',usersRoutes);
+
 app.get("/", (req, res) => {
   res.send("Hello form homepage");
 });
